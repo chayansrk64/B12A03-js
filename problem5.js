@@ -1,15 +1,15 @@
 /** Problem 05 - ( PH Email Generator )  */
 var student= { name: "jhankar" , roll: 1014 ,department: "cse" };
 //write your code here
-var concateValue = ''
+var email = ''
 for(var values in student){
     if(student[values] === student.name){
-        concateValue += student[values];
+        email += student[values];
     }else if(student[values] === student.roll){
-        concateValue += student[values] + ".";
+        email += student[values] + ".";
     }else{
-        concateValue += student[values] + "@ph.ac.bd"
+        email += student[values] + "@ph.ac.bd"
     }
 }
-console.log(concateValue)
+console.log(email)
 
